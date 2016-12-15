@@ -31,6 +31,15 @@ function Demo()
 
 	if(++i < MAX)
 		setTimeout(Demo, 2000);
+		var bObj = document.getElementById("me" +(i-1)*5);
+		bObj.onclick = function () {
+			if (i == 1) {
+				window.location="http://www.tonywu.me/blog";
+			} else if (i == 2) {
+				window.location="http://www.tonywu.me/second-hand-book-sale";
+			}
+          
+        }
 }
 </script>
 </body>
